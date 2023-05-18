@@ -4,7 +4,7 @@ import { HopIcon } from "@/components/icons";
 export default function Home() {
    return (
       <>
-         <section className="flex flex-col items-center justify-between md:flex-row md:px-24 lg:px-64">
+         <section className="flex flex-col items-center justify-between md:flex-row md:px-24 lg:px-56">
             <HopIcon className="h-48 w-48" />
             <div className="flex flex-col items-center justify-center space-y-4">
                <h2 className="font-semibold">Travel at the speed of sight</h2>
@@ -24,12 +24,12 @@ export default function Home() {
                </a>
             </div>
          </section>
-         <section className="flex flex-col items-center justify-between md:flex-row md:px-24 lg:px-64">
+         <section className="flex flex-col items-center justify-between md:flex-row md:px-24 lg:px-56">
             <h3>Icon-first</h3>
             <h3>Drag and drop</h3>
             <h3>Power user friendly</h3>
          </section>
-         <section className="mt-8 flex flex-col items-start space-y-4 md:px-24 lg:px-64">
+         <section className="mt-8 flex flex-col items-start space-y-4 md:px-24 lg:px-56">
             <h2 className="font-semibold">Keyboard shortcuts</h2>
             <div className="grid w-full grid-cols-1 gap-x-16 md:grid-cols-2">
                <div className="flex justify-between px-2 py-4">
