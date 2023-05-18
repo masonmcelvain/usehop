@@ -1,8 +1,7 @@
-import { Wrapper } from "@/ui/layout";
 import "./globals.css";
 
 export const metadata = {
-   title: "Use Hop",
+   title: "Hop",
 };
 
 export default function RootLayout({
