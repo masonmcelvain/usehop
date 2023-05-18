@@ -1,3 +1,9 @@
+import { Wrapper } from "@/ui/layout";
+
 export default function Home() {
-   return <p>Hello World!</p>;
+   return (
+      <Wrapper>
+         <p>Hello World!</p>
+      </Wrapper>
+   );
 }
