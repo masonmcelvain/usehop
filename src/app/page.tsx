@@ -12,6 +12,7 @@ export default function Home() {
                   alt="Screenshot of hop in action"
                   width={318}
                   height={436}
+                  priority
                   className="rounded-md shadow-lg shadow-zinc-500"
                />
             </div>
