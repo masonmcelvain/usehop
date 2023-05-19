@@ -15,7 +15,7 @@ export default function RootLayout({
          <body>
             <div className="mx-auto flex min-h-screen w-full max-w-[70rem] flex-col justify-start px-4 md:px-6 lg:px-8">
                <Header />
-               <div>{children}</div>
+               {children}
                <Footer />
             </div>
          </body>

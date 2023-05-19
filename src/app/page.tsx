@@ -1,13 +1,23 @@
 import { Kbd } from "@/components/data";
-import { HopIcon } from "@/components/icons";
+import Image from "next/image";
 
 export default function Home() {
    return (
-      <>
-         <section className="flex flex-col items-center justify-between md:flex-row md:px-24 lg:px-56">
-            <HopIcon className="h-48 w-48" />
-            <div className="flex flex-col items-center justify-center space-y-4">
-               <h2 className="font-semibold">Travel at the speed of sight</h2>
+      <div className="flex flex-col space-y-8 md:space-y-16">
+         <section className="flex flex-col items-center justify-between md:flex-row md:px-24 lg:px-48">
+            <div className="flex flex-col items-center justify-center space-y-0 md:flex-row md:space-x-2 md:space-y-0">
+               <Image
+                  src="/screenshot.png"
+                  alt="Screenshot of hop in action"
+                  width={318}
+                  height={436}
+                  className="rounded-md"
+               />
+            </div>
+            <div className="mt-12 flex flex-col items-center justify-center space-y-4 md:mt-0">
+               <h2 className="mb-8 font-semibold">
+                  Travel at the speed of sight
+               </h2>
                <a
                   className="cursor-pointer rounded-md bg-blue-500 px-4 font-semibold leading-[2.5rem] text-white hover:bg-blue-600 focus:ring active:bg-blue-700"
                   href="https://addons.mozilla.org/en-US/firefox/addon/hop"
@@ -24,12 +34,12 @@ export default function Home() {
                </a>
             </div>
          </section>
-         <section className="flex flex-col items-center justify-between md:flex-row md:px-24 lg:px-56">
+         <section className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0 md:px-24 lg:px-48">
             <h3>Icon-first</h3>
             <h3>Drag and drop</h3>
             <h3>Power user friendly</h3>
          </section>
-         <section className="mt-8 flex flex-col items-start space-y-4 md:px-24 lg:px-56">
+         <section className="flex flex-col items-start space-y-4 md:px-24 lg:px-48">
             <h2 className="font-semibold">Keyboard shortcuts</h2>
             <div className="grid w-full grid-cols-1 gap-x-16 md:grid-cols-2">
                <div className="flex justify-between px-2 py-4">
@@ -58,6 +68,6 @@ export default function Home() {
                </div>
             </div>
          </section>
-      </>
+      </div>
    );
 }
