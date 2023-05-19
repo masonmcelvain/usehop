@@ -1,5 +1,6 @@
-import { Kbd } from "@/components/data";
+import { Badge, Kbd } from "@/components/data";
 import Image from "next/image";
+import { FaDragon, FaImage, FaKeyboard } from "react-icons/fa";
 
 export default function Home() {
    return (
@@ -35,9 +36,9 @@ export default function Home() {
             </div>
          </section>
          <section className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0 md:px-24 lg:px-48">
-            <h3>Icon-first</h3>
-            <h3>Drag and drop</h3>
-            <h3>Power user friendly</h3>
+            <Badge Icon={FaImage} text="Icon-first" />
+            <Badge Icon={FaDragon} text="Drag and drop" />
+            <Badge Icon={FaKeyboard} text="Power user friendly" />
          </section>
          <section className="flex flex-col items-start space-y-4 md:px-24 lg:px-48">
             <h2 className="font-semibold">Keyboard shortcuts</h2>
