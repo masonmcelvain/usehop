@@ -8,7 +8,7 @@ type BadgeProps = {
 export function Badge({ Icon, text }: BadgeProps) {
    return (
       <div className="flex items-center justify-center space-x-2">
-         <Icon size="2rem" />
+         <Icon size="2em" />
          <h3>{text}</h3>
       </div>
    );
