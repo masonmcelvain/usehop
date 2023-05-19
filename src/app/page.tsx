@@ -12,7 +12,7 @@ export default function Home() {
                   alt="Screenshot of hop in action"
                   width={318}
                   height={436}
-                  className="rounded-md"
+                  className="rounded-md shadow-lg shadow-zinc-500"
                />
             </div>
             <div className="mt-12 flex flex-col items-center justify-center space-y-4 md:mt-0">
