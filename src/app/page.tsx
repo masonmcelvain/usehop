@@ -51,15 +51,27 @@ export default function Home() {
                   </span>
                </div>
                <div className="flex justify-between border-t border-zinc-200 px-2 py-4 md:border-none">
-                  Open Nth link
+                  Visit nth link
                   <span>
-                     <Kbd>{"{N}"}</Kbd>
+                     <Kbd>{"{n}"}</Kbd>
+                  </span>
+               </div>
+               <div className="flex justify-between border-t border-zinc-200 px-2 py-4">
+                  Visit in new tab
+                  <span>
+                     <Kbd>ctrl</Kbd> + <Kbd>{"{n}"}</Kbd>
                   </span>
                </div>
                <div className="flex justify-between border-t border-zinc-200 px-2 py-4">
                   Toggle edit mode
                   <span>
                      <Kbd>e</Kbd>
+                  </span>
+               </div>
+               <div className="flex justify-between border-t border-zinc-200 px-2 py-4">
+                  Edit nth link
+                  <span>
+                     <Kbd>e</Kbd> , <Kbd>{"{n}"}</Kbd>
                   </span>
                </div>
                <div className="flex justify-between border-t border-zinc-200 px-2 py-4">
