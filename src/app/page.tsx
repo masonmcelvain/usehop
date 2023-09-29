@@ -16,7 +16,7 @@ export default function Home() {
                   className="rounded-md shadow-lg shadow-zinc-500"
                />
             </div>
-            <div className="mt-12 flex flex-col items-center justify-center space-y-4 md:mt-0">
+            <div className="mt-12 flex flex-col items-center justify-center space-y-4 text-center md:mt-0">
                <h2 className="mb-8 font-semibold">
                   Travel at the speed of sight
                </h2>
