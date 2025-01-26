@@ -10,7 +10,7 @@
    },
    "packageManager": "pnpm@9.15.4",
    "engines": {
-      "node": "22.13.0"
+      "node": "22.13.1"
    },
    "scripts": {
       "dev": "next dev",
@@ -30,7 +30,7 @@
    "devDependencies": {
       "@eslint/eslintrc": "3.2.0",
       "@eslint/js": "9.18.0",
-      "@types/node": "22.10.7",
+      "@types/node": "22.10.10",
       "@types/react": "19.0.8",
       "@types/react-dom": "19.0.3",
       "@typescript-eslint/eslint-plugin": "8.21.0",
