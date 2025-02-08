@@ -6,7 +6,7 @@ export default function Home() {
    return (
       <div className="flex flex-col space-y-8 md:space-y-16">
          <section className="flex flex-col items-center justify-between md:flex-row md:px-24 lg:px-48">
-            <div className="flex flex-col items-center justify-center space-y-0 md:flex-row md:space-x-2 md:space-y-0">
+            <div className="flex flex-col items-center justify-center space-y-0 md:flex-row md:space-y-0 md:space-x-2">
                <Image
                   src="/screenshot.png"
                   alt="Screenshot of hop in action"
@@ -21,14 +21,14 @@ export default function Home() {
                   Travel at the speed of sight
                </h2>
                <a
-                  className="cursor-pointer rounded-md bg-blue-500 px-4 font-semibold leading-[2.5rem] text-white hover:bg-blue-600 focus:ring active:bg-blue-700"
+                  className="cursor-pointer rounded-md bg-blue-500 px-4 leading-[2.5rem] font-semibold text-white hover:bg-blue-600 focus:ring-3 active:bg-blue-700"
                   href="https://addons.mozilla.org/en-US/firefox/addon/hop"
                   target="_blank"
                >
                   Install on Firefox
                </a>
                <a
-                  className="cursor-pointer rounded-md bg-yellow-500 px-4 font-semibold leading-[2.5rem] text-white hover:bg-yellow-600 focus:ring active:bg-yellow-700"
+                  className="cursor-pointer rounded-md bg-yellow-500 px-4 leading-[2.5rem] font-semibold text-white hover:bg-yellow-600 focus:ring-3 active:bg-yellow-700"
                   href="https://chrome.google.com/webstore/detail/hop/djdlkcbfbdebfaoakhnoienanaakgccd"
                   target="_blank"
                >
