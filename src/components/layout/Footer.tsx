@@ -1,6 +1,6 @@
 export function Footer() {
    return (
-      <div className="mb-8 mt-auto flex w-full items-center justify-between pt-8">
+      <div className="mt-auto mb-8 flex w-full items-center justify-between pt-8">
          <a href="https://github.com/masonmcelvain" target="_blank">
             Made by{" "}
             <span className="font-semibold hover:underline">
