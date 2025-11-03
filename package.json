@@ -17,7 +17,7 @@
       "build": "next build",
       "start": "next start",
       "format": "prettier --write .",
-      "lint": "next lint",
+      "lint": "eslint .",
       "prepare": "husky",
       "type-check": "tsc --pretty"
    },

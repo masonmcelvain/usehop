@@ -1,4 +1,6 @@
-type KbdProps = React.PropsWithChildren;
+import type { PropsWithChildren } from "react";
+
+type KbdProps = PropsWithChildren;
 
 export function Kbd({ children }: KbdProps) {
    return (
