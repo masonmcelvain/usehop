@@ -22,7 +22,7 @@
       "type-check": "tsc --pretty"
    },
    "dependencies": {
-      "next": "16.0.3",
+      "next": "16.0.5",
       "react": "19.2.0",
       "react-dom": "19.2.0",
       "react-icons": "5.5.0"
@@ -37,7 +37,7 @@
       "@typescript-eslint/eslint-plugin": "8.46.2",
       "@typescript-eslint/parser": "8.46.2",
       "eslint": "9.39.1",
-      "eslint-config-next": "16.0.3",
+      "eslint-config-next": "16.0.5",
       "eslint-config-prettier": "10.1.8",
       "husky": "9.1.7",
       "lint-staged": "16.2.7",
