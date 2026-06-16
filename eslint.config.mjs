@@ -1,7 +1,6 @@
 import js from "@eslint/js";
 import nextPlugin from "eslint-config-next";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
-import tsParser from "@typescript-eslint/parser";
 import prettierConfig from "eslint-config-prettier";
 
 const config = [
@@ -11,24 +10,15 @@ const config = [
    },
    ...nextPlugin,
    {
-      plugins: {
-         "@typescript-eslint": typescriptEslint,
-      },
-      languageOptions: {
-         parser: tsParser,
-      },
+      // The `@typescript-eslint` plugin and TypeScript parser are already
+      // registered by `eslint-config-next` (its `next/typescript` config),
+      // scoped to these files. We reuse that registration rather than
+      // redefining the plugin, which would error on any version skew between
+      // our direct dependency and the one `eslint-config-next` resolves.
+      files: ["**/*.ts", "**/*.tsx"],
       rules: {
          // TypeScript ESLint recommended rules
          ...typescriptEslint.configs.recommended.rules,
-         "arrow-parens": ["error", "always"],
-
-         "arrow-spacing": [
-            "error",
-            {
-               before: true,
-               after: true,
-            },
-         ],
 
          "@typescript-eslint/no-unused-vars": [
             "warn",
@@ -38,6 +28,19 @@ const config = [
                destructuredArrayIgnorePattern: "^_",
                ignoreRestSiblings: true,
                varsIgnorePattern: "^_",
+            },
+         ],
+      },
+   },
+   {
+      rules: {
+         "arrow-parens": ["error", "always"],
+
+         "arrow-spacing": [
+            "error",
+            {
+               before: true,
+               after: true,
             },
          ],
 
